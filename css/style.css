@@ -18,7 +18,7 @@
 }
 
 /* Dark01 */
-.dark-1 {
+.heading-text {
   color: #131313;
 }
 
@@ -37,14 +37,28 @@
   background-color: rgba(255, 144, 14, 0.1);
 }
 
+.btn-primary{
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
 
 /* Header Styles */
 
 
 /* Navbar Related Styles */
+.brand{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
 .navbar {
   align-items: center;
   justify-content: space-between;
+  padding-top: 30px;
 }
 
 .nav-links {
@@ -58,9 +72,40 @@
 .item-link {
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .navbar, .banner{
   max-width: 1440px;
   margin: 0 auto;
+}
+/* Banner Styles */
+.banner{
+  align-items: center;
+
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.banner-description{
+  margin-bottom: 30px;
+}
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 7rem;
+}
+.banner-image{
+  width: 100%;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
 }
