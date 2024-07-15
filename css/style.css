@@ -37,7 +37,7 @@
   background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #FF900E;
   color: white;
   padding: 20px 25px;
@@ -47,14 +47,25 @@
   border: none;
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 130px;
+  margin-bottom: 110px;
+}
+
 /* Header Styles */
 
 
 /* Navbar Related Styles */
-.brand{
+.brand {
   font-weight: 700;
   font-size: 2.5rem;
 }
+
 .navbar {
   align-items: center;
   justify-content: space-between;
@@ -75,37 +86,109 @@
   font-size: 1.3rem;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 /* Banner Styles */
-.banner{
+.banner {
   align-items: center;
 
 }
-.banner-title{
+
+.banner-title {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.banner-description{
+
+.banner-description {
   margin-bottom: 30px;
 }
-.banner-content{
+
+.banner-content {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 7rem;
 }
-.banner-image{
+
+.banner-image {
   width: 100%;
+  padding-bottom: 30px;
+}
+
+.teams {
+  align-items: center;
+}
+
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.features-title {
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+
+#quick-list {
+  font-weight: 500;
+}
+
+.features-description {
+  margin-bottom: 32px;
+}
+
+.quick-features {
+  color: #FF900E;
+  font-weight: 700;
 }
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links{
+
+  .navbar,
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
+  .banner-content{
+    padding: 20px;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  .banner-title{
+    font-size: 2.5rem;
+  }
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 530px;
+  }
+}
+
+/* Medium Size Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .our-features{
+    margin: 0 auto;
+  }
+
 }
